@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICG</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="frm">
+        <img src="{{ url_for('static', filename='image.png') }}" alt="">
+        <h1>ICG</h1>
+        <p>Upload your image(s):</p>
+        <div id="inp">
+            <input type="file" id="imageInput" name="images" accept="image/*" onchange="show()" multiple>
+            <label for="imageInput" class="choose-file">Choose File</label>
+            <div id="selectedFiles"></div> <!-- Display selected file names -->
+            <div id="inps">
+                <button onclick="uploadImage()">Upload</button>
+     
+            </div>
+        </div>
+    </div>
+    <div id="result">Result:</div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

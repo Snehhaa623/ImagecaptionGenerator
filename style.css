@@ -1,0 +1,82 @@
+body {
+    background: #dbdada;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    margin: 0;
+}
+
+#frm, #result {
+    padding: 32px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 480px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    word-break: break-all;
+    color: #020202;
+}
+
+img {
+    width: 75px;
+    margin-bottom: 8px;
+}
+
+#inp {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    background-color: #626362;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+label:hover {
+    background-color: #333333;
+}
+
+button {
+    width: fit-content;
+    padding: 8px 16px;
+    background: #787978;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #333333;
+}
+
+
