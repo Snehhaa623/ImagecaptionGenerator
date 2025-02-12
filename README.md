@@ -2,4 +2,4 @@
 
 
 
-TITLE : Automatic ICG
+TITLE : AI-Powered Automatic Image Captioning System
